@@ -3,19 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>3D 모델 뷰어</title>
-  <!-- Marmoset Viewer 스크립트 -->
   <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
 </head>
 <body>
-  <!-- 이 div 안에 3D 뷰어가 렌더링됩니다 -->
-  <div id="viewer-container" style="width: 600px; height: 500px; margin: 0 auto;"></div>
-
+  <div id="viewer-container" style="width: 600px; height: 500px; margin: auto;"></div>
   <script>
-    // 여기서 desk1.mview 파일을 불러와서 뷰어를 생성
-    marmoset.embed(
-      'viewer-container',
-      'https://konvision1.github.io/desk/desk1.mview'
-    );
+    marmoset.embed('viewer-container', 'https://konvision1.github.io/desk/desk1.mview');
   </script>
 </body>
 </html>
